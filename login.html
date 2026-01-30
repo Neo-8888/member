@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Member Portal - Login</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; display:flex; align-items:center; justify-content:center; height:100vh; background:#f5f5f5 }
+    .card { background:white; padding:24px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.08); width:320px }
+    input{width:100%; padding:8px; margin:8px 0}
+    button{width:100%; padding:10px}
+    .note{font-size:.9rem; color:#666}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Secure Member Login</h2>
+    <form id="loginForm">
+      <input id="email" type="email" placeholder="Email" required />
+      <input id="password" type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+    <p class="note">Demo user: <strong>neo@motise.com</strong> / <strong>motise@neo05</strong></p>
+    <p id="msg" style="color:red"></p>
+  </div>
+
+  <script src="javascript_assets/api.js"></script>
+  <script src="javascript_assets/auth.js"></script>
+</body>
+</html>
